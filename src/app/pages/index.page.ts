@@ -1,37 +1,44 @@
 import { Component } from '@angular/core';
+import { RouteMeta } from '@analogjs/router';
+import { injectContentFiles } from '@analogjs/content';
+import { HeroComponent } from '../components/hero';
+import { ProjectCardComponent } from '../components/project-card';
+import { FooterComponent } from '../components/footer';
+import type { ProjectAttributes } from '../models/project';
+import {BlobComponent} from "../components/blob";
+
+export const routeMeta: RouteMeta = {
+  title: 'Gitte Vandevenne — Portfolio',
+};
 
 @Component({
   selector: 'app-home',
+  imports: [HeroComponent, ProjectCardComponent, FooterComponent, BlobComponent],
   template: `
-    <h2>Analog</h2>
-
-    <h3>The fullstack meta-framework for Angular!</h3>
-
-    <p class="read-the-docs">
-      <a href="https://analogjs.org" target="_blank">Docs</a> |
-      <a href="https://github.com/analogjs/analog" target="_blank">GitHub</a> |
-      <a href="https://github.com/sponsors/brandonroberts" target="_blank">
-        Sponsor
-      </a>
-    </p>
-  `,
-  styles: `
-    :host {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .read-the-docs > * {
-      color: #fff;
-    }
-
-    @media (prefers-color-scheme: light) {
-      .read-the-docs > * {
-        color: #213547;
-      }
-    }
+    <div class="relative overflow-x-hidden">
+    <div
+        class="pointer-events-none absolute -top-20 -right-20 h-75 w-75 text-accent opacity-90 md:h-105 md:w-105 lg:right-0 lg:-top-45 lg:h-200 lg:w-180 -z-5"
+    >
+      <app-blob variant="hero" />
+    </div>
+    <app-hero />
+    <section id="projects" class="px-6 pb-24 md:px-16">
+      <div class="mb-16 text-center">
+        <h2 class="font-serif text-4xl text-ink">Projects</h2>
+        <span class="mx-auto mt-3 block h-0.5 w-16 bg-line"></span>
+      </div>
+      <div class="mx-auto flex max-w-3xl flex-col gap-10 items-center">
+        @for (project of projects; track project.slug) {
+          <app-project-card [project]="project" />
+        }
+      </div>
+    </section>
+    <app-footer />
+    </div>
   `,
 })
-export default class Home {}
+export default class HomePage {
+  protected readonly projects = injectContentFiles<ProjectAttributes>((file) =>
+    file.filename.includes('/content/project-entries/'),
+  ).sort((a, b) => a.attributes.order - b.attributes.order);
+}

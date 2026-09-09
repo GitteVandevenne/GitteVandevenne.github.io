@@ -16,8 +16,18 @@ export default defineConfig(({ mode }) => ({
     analog({
       ssr: false,
       static: true,
+      content: {
+        highlighter: 'prism',
+      },
       prerender: {
-        routes: [],
+        routes: [
+          '/',
+          '/about',
+          {
+            contentDir: 'src/content/project-entries',
+            transform: (file) => `/projects/${file.name}`,
+          },
+        ],
       },
     }),
     tailwindcss()
