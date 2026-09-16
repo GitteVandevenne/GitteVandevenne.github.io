@@ -5,6 +5,7 @@ import { injectContent, MarkdownComponent } from '@analogjs/content';
 import { HeaderComponent } from '../../components/header';
 import { FooterComponent } from '../../components/footer';
 import type { ProjectAttributes } from '../../models/project';
+import {BlobComponent} from "../../components/blob";
 
 export const routeMeta: RouteMeta = {
   title: 'Project — Gitte Vandevenne',
@@ -12,11 +13,12 @@ export const routeMeta: RouteMeta = {
 
 @Component({
   selector: 'app-project-detail',
-  imports: [HeaderComponent, FooterComponent, MarkdownComponent],
+  imports: [HeaderComponent, FooterComponent, MarkdownComponent, BlobComponent],
   template: `
+ <div class="flex min-h-screen flex-col">
     <app-header />
     @if (project(); as p) {
-      <section class="mx-auto max-w-3xl px-6 pb-24 pt-8 md:px-16">
+      <section class="mx-auto max-w-[75%] px-6 pb-24 pt-8 md:px-16">
         <p class="text-xs font-semibold uppercase tracking-widest text-accent">
           {{ p.attributes.role }}
         </p>
@@ -31,12 +33,12 @@ export const routeMeta: RouteMeta = {
           }
         </div>
 
-        <div class="mt-10 flex h-72 items-center justify-center rounded-3xl bg-card md:h-96">
+        <div class="mt-10 flex h-72 items-center justify-center rounded-3xl  md:h-96">
           @if (p.attributes.coverImage) {
             <img
               [src]="p.attributes.coverImage"
               alt=""
-              class="h-full w-full rounded-3xl object-cover"
+              class="w-full rounded-3xl object-cover"
             />
           }
         </div>
@@ -44,7 +46,8 @@ export const routeMeta: RouteMeta = {
         <analog-markdown [content]="p.content" classes="analog-markdown mt-10" />
 
         @if (p.attributes.gallery?.length) {
-          <div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <h2 class="font-serif text-2xl mt-8 mb-2">Gallery</h2>
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             @for (img of p.attributes.gallery; track img) {
               <img [src]="img" alt="" class="aspect-square w-full rounded-2xl object-cover" />
             }
@@ -52,7 +55,8 @@ export const routeMeta: RouteMeta = {
         }
       </section>
     }
-    <app-footer />
+    <app-footer class="mt-auto" />
+ </div>
   `,
 })
 export default class ProjectDetailPage {

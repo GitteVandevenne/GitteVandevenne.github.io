@@ -6,20 +6,20 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   imports: [RouterLink, RouterLinkActive],
   template: `
     <header
-      class="relative z-10 flex flex-col items-center gap-3 px-6 py-6 md:flex-row md:items-center md:justify-between md:px-16"
+      class="relative z-10 flex items-center gap-3 px-6 py-6 flex-row md:items-center justify-between md:px-16 bg-accent md:bg-transparent"
     >
-      <a routerLink="/" class="font-nav text-lg text-ink">Gitte Vandevenne</a>
+      <a routerLink="/" class="font-nav text-lg text-white md:text-ink">Gitte Vandevenne</a>
       <nav
-        class="flex items-center gap-8 font-nav text-sm text-ink"
-        [class.md:text-white]="onBlob()"
+        class="flex items-center gap-8 font-nav text-sm text-white md:text-ink"
       >
-        <a href="/#projects" class="transition hover:underline hover:underline-offset-4">
+        <a href="/#projects" class="transition hover:underline hover:underline-offset-4" [class.text-white]="onBlob()">
           Projects
         </a>
         <a
           routerLink="/about"
           routerLinkActive="underline underline-offset-4"
           class="transition hover:underline hover:underline-offset-4"
+          [class.text-white]="onBlob()"
         >
           About
         </a>

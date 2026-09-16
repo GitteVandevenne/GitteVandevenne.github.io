@@ -7,9 +7,6 @@ import { HeaderComponent } from './header';
   template: `
     <section class="relative overflow-x-hidden pb-24">
 
-
-      <app-header [onBlob]="true" />
-
       <div class="max-w-xl px-6 pt-8 md:px-16">
         <p
           class="inline-block  font-sans text-xs font-semibold uppercase tracking-widest text-accent"
