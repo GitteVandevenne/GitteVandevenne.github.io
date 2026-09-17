@@ -40,9 +40,9 @@ export const routeMeta: RouteMeta = {
         <h2 class="font-serif text-4xl text-ink">Projects</h2>
         <span class="mx-auto mt-3 block h-0.5 w-16 bg-line"></span>
       </div>
-      <div class="relative mx-auto flex max-w-3xl flex-col gap-10 items-center">
-        @for (project of projects; track project.slug) {
-          <app-project-card [project]="project" />
+      <div class="relative mx-auto flex max-w-5xl flex-col gap-20">
+        @for (project of projects; track project.slug; let i = $index) {
+          <app-project-card [project]="project" [reversed]="i % 2 === 1" />
         }
       </div>
     </section>

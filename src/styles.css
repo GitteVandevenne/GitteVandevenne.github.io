@@ -27,5 +27,5 @@ body {
   margin: 0;
 }
 
-.analog-markdown h2 { @apply font-serif text-2xl mt-8 mb-2; }
+.analog-markdown h2 { @apply font-serif text-2xl mt-8 mb-2 }
 .analog-markdown p { @apply text-ink/80; text-align: left; }

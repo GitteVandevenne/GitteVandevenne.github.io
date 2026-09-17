@@ -5,7 +5,8 @@ summary: 'Design for an planning platform used by G-sport Vlaanderen to for thei
 role: 'UI/UX Design'
 tags: ['Figma', 'UI Design', 'Prototyping']
 coverImage: '/src/assets/move_a-head/mockup.png'
-gallery: ['/src/assets/move_a-head/activiteit-toevoegen.png', '/src/assets/move_a-head/dagplanning-groep.png', '/src/assets/move_a-head/dagplanning-lesgever.png', '/src/assets/move_a-head/groep-toevoegen.png', '/src/assets/move_a-head/login.png', '/src/assets/move_a-head/overzicht-activiteiten.png', '/src/assets/move_a-head/overzicht-groepen.png', '/src/assets/move_a-head/planning-activiteiten.png', '/src/assets/move_a-head/planning-groepen.png', '/src/assets/move_a-head/registration-form.png']
+cardImage: '/src/assets/move_a-head/mockup.png'
+gallery: ['/src/assets/move_a-head/activiteit-toevoegen-m.png', '/src/assets/move_a-head/dagplanning-groep-m.png', '/src/assets/move_a-head/dagplanning-lesgever-m.png', '/src/assets/move_a-head/groep-toevoegen-m.png', '/src/assets/move_a-head/login-m.png', '/src/assets/move_a-head/overzicht-activiteiten-m.png', '/src/assets/move_a-head/overzicht-groepen-m.png', '/src/assets/move_a-head/planning-activiteiten-m.png', '/src/assets/move_a-head/planning-groepen-m.png', '/src/assets/move_a-head/registration-form-m.png', '/src/assets/move_a-head/groep-details-m.png']
 order: 1
 ---
 
@@ -28,7 +29,7 @@ like walking distances between venues, activity capacity, intensity levels, etc.
 <br><br>
 
 Working from a detailed feature brief, my role was translating the requirements, constraints, and feature scope into a usable, coherent interface.
-
+<br><br>
 **A registration form that handles sensitive information carefully.** 
 Registering a group meant capturing organization details, headcounts, arrival and departure times, and sensitive fields. 
 I split the form into four labeled sections, Organization, Group details, Contact, Profile & characteristics, so it reads as a series of short steps rather than one long questionnaire.

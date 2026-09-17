@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header';
 
 @Component({
   selector: 'app-hero',
-  imports: [HeaderComponent],
+  imports: [],
   template: `
     <section class="relative overflow-x-hidden pb-24">
 
