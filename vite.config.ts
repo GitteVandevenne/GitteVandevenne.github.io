@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     analog({
+      apiPrefix: 'portfolio',
       ssr: false,
       static: true,
       content: {
