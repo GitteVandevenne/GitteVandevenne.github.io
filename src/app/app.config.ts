@@ -9,10 +9,9 @@ import {
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideFileRouter, requestContextInterceptor } from '@analogjs/router';
 import {provideContent, withMarkdownRenderer} from "@analogjs/content";
-import { mergeApplicationConfig } from '@angular/core';
-import { envConfig } from './app.config.env';
 
-export const appConfig = mergeApplicationConfig(envConfig, {
+export const appConfig: ApplicationConfig = {
+
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideFileRouter(),
@@ -22,4 +21,4 @@ export const appConfig = mergeApplicationConfig(envConfig, {
     ),
     provideClientHydration(withEventReplay()),
   ],
-});
+};
