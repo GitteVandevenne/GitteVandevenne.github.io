@@ -4,9 +4,9 @@ client: 'G-sport Vlaanderen'
 summary: 'Design for an planning platform used by G-sport Vlaanderen to for their Move a-head sports day.'
 role: 'UI/UX Design'
 tags: [ 'Figma', 'UI Design', 'Prototyping' ]
-coverImage: '/src/assets/move_a-head/mockup.png'
-cardImage: '/src/assets/move_a-head/mockup.png'
-gallery: [ '/src/assets/move_a-head/activiteit-toevoegen-m.png', '/src/assets/move_a-head/dagplanning-groep-m.png', '/src/assets/move_a-head/dagplanning-lesgever-m.png', '/src/assets/move_a-head/groep-toevoegen-m.png', '/src/assets/move_a-head/login-m.png', '/src/assets/move_a-head/overzicht-activiteiten-m.png', '/src/assets/move_a-head/overzicht-groepen-m.png', '/src/assets/move_a-head/planning-activiteiten-m.png', '/src/assets/move_a-head/planning-groepen-m.png', '/src/assets/move_a-head/registration-form-m.png', '/src/assets/move_a-head/groep-details-m.png' ]
+coverImage: '/assets/move_a-head/mockup.png'
+cardImage: '/assets/move_a-head/mockup.png'
+gallery: [ '/assets/move_a-head/activiteit-toevoegen-m.png', '/assets/move_a-head/dagplanning-groep-m.png', '/assets/move_a-head/dagplanning-lesgever-m.png', '/assets/move_a-head/groep-toevoegen-m.png', '/assets/move_a-head/login-m.png', '/assets/move_a-head/overzicht-activiteiten-m.png', '/assets/move_a-head/overzicht-groepen-m.png', '/assets/move_a-head/planning-activiteiten-m.png', '/assets/move_a-head/planning-groepen-m.png', '/assets/move_a-head/registration-form-m.png', '/assets/move_a-head/groep-details-m.png' ]
 order: 1
 ---
 
@@ -41,7 +41,7 @@ I split the form into four labeled sections, Organization, Group details, Contac
 reads as a series of short steps rather than one long questionnaire.
 
 <br>
-<img src="/src/assets/move_a-head/registration-form.png" alt="Group registration form">
+<img src="/assets/move_a-head/registration-form.png" alt="Group registration form">
 <br>
 
 **A planning view that surfaces conflicts at a glance.**
@@ -52,7 +52,7 @@ I designed the planning overview, so both types of issues are visually distinct 
 something an admin has to hunt for.
 
 <br>
-<img src="/src/assets/move_a-head/planning-groepen.png" alt="Activity and location planning overview">
+<img src="/assets/move_a-head/planning-groepen.png" alt="Activity and location planning overview">
 
 ## Impact
 

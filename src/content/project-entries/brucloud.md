@@ -4,9 +4,9 @@ client: 'Brussels Airport Company'
 summary: 'Design for an internal platform for Brussels Airport Cargo. The platform has multiple different use cases and applications.'
 role: 'UI/UX Design, Frontend Development'
 tags: [ 'Figma', 'UI Design', 'Development' ]
-coverImage: '/src/assets/brucloud/mockup.png'
-cardImage: '/src/assets/brucloud/mockup.png'
-gallery: [ '/src/assets/brucloud/overview-m.png', '/src/assets/brucloud/overview-FAVV-m.png', '/src/assets/brucloud/overview-details-import-m.png', '/src/assets/brucloud/overview-details-export-m.png', '/src/assets/brucloud/overview-details-transfer-m.png', '/src/assets/brucloud/ima-docs-m.png', '/src/assets/brucloud/ima-goods-m.png', '/src/assets/brucloud/ima-new-goods-m.png', '/src/assets/brucloud/ima-new-goods-traces-m.png', '/src/assets/brucloud/ima-add-documents-m.png'  ]
+coverImage: '/assets/brucloud/mockup.png'
+cardImage: '/assets/brucloud/mockup.png'
+gallery: [ '/assets/brucloud/overview-m.png', '/assets/brucloud/overview-FAVV-m.png', '/assets/brucloud/overview-details-import-m.png', '/assets/brucloud/overview-details-export-m.png', '/assets/brucloud/overview-details-transfer-m.png', '/assets/brucloud/ima-docs-m.png', '/assets/brucloud/ima-goods-m.png', '/assets/brucloud/ima-new-goods-m.png', '/assets/brucloud/ima-new-goods-traces-m.png', '/assets/brucloud/ima-add-documents-m.png'  ]
 order: 2
 ---
 
@@ -38,7 +38,7 @@ The overview lists the day's shipments with filters, search and status badges th
 create, edit and delete shipments, while ground handlers and FAVV get a read-only view.
 
 <br>
-<img src="/src/assets/brucloud/overview.png" alt="Shipment overview with filters and status badges">
+<img src="/public/assets/brucloud/overview.png" alt="Shipment overview with filters and status badges">
 <br>
 
 **One place to follow an inspection from request to result.**
@@ -46,9 +46,9 @@ The shipment detail page brings together the shipment's status, goods and docume
 inspection, FAVV planners assign inspectors, and inspectors record their outcome.
 
 <br>
-<img src="/src/assets/brucloud/ima-docs.png" alt="Shipment details with inspection request">
+<img src="/public/assets/brucloud/ima-docs.png" alt="Shipment details with inspection request">
 <br>
-<img src="/src/assets/brucloud/ima-goods.png" alt="Goods tab with per-product statuses">
+<img src="/public/assets/brucloud/ima-goods.png" alt="Goods tab with per-product statuses">
 
 ## Impact
 
