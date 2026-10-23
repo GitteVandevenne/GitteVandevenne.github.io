@@ -4,9 +4,9 @@ import { Component, input } from '@angular/core';
   selector: 'app-blob',
   template: `
     @if (variant() === 'hero') {
-      <img src="/Blob.svg" alt="" aria-hidden="true" class="h-full w-full object-contain" />
+      <img src="Blob.svg" alt="" aria-hidden="true" class="h-full w-full object-contain" />
     } @else {
-      <img src="/Footer-blob.svg" alt="" aria-hidden="true" class="h-full w-full object-fill" />
+      <img src="Footer-blob.svg" alt="" aria-hidden="true" class="h-full w-full object-fill" />
     }
   `,
 })
