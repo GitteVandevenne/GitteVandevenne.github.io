@@ -1,22 +1,28 @@
 import { Component } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { RouteMeta } from '@analogjs/router';
-import { injectContent, MarkdownComponent } from '@analogjs/content';
+import { injectContent, injectContentFiles, MarkdownComponent } from '@analogjs/content';
 import { HeaderComponent } from '../../components/header';
 import { FooterComponent } from '../../components/footer';
 import { ProjectGalleryComponent } from '../../components/project-gallery';
 import type { ProjectAttributes } from '../../models/project';
-import {BlobComponent} from "../../components/blob";
+import { BlobComponent } from '../../components/blob';
 
 export const routeMeta: RouteMeta = {
-  title: 'Project — Gitte Vandevenne',
+  title: (route) => {
+    const slug = route.paramMap.get('slug');
+    const entry = injectContentFiles<ProjectAttributes>(
+      (file) => file.filename.includes('/project-entries/') && file.slug === slug,
+    )[0];
+    return `${entry?.attributes.title ?? 'Project'}`;
+  },
 };
 
 @Component({
   selector: 'app-project-detail',
   imports: [HeaderComponent, FooterComponent, MarkdownComponent, ProjectGalleryComponent, BlobComponent],
   template: `
- <div class="flex min-h-screen flex-col relative">
+ <div class="flex min-h-screen flex-col relative overflow-x-hidden">
    <div
        class="pointer-events-none absolute -z-5 text-accent -top-20 -right-55 lg:-right-50 lg:-top-45 md:h-150 lg:h-200 2xl:h-300 2xl:-top-130 2xl:-right-80 hidden md:block"
    >

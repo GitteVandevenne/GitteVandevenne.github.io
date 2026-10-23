@@ -14,8 +14,7 @@ import { Component } from '@angular/core';
         </p>
         <h1 class="mt-3 font-serif text-5xl leading-tight text-ink md:text-6xl">Hi, I'm Gitte</h1>
         <p class="mt-4 max-w-md text-ink/70">
-          Short text with details about you, what you do or your professional career. You can add
-          more information on the about page.
+          I am a UI/UX designer and frontend developer. I currently work as Frontend consultant for <a class="underline" href="https://axxes.com/nl-be">Axxes</a>.
         </p>
       </div>
     </section>

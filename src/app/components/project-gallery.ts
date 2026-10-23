@@ -24,7 +24,7 @@ import EmblaCarousel, { type EmblaCarouselType } from 'embla-carousel';
                 <img
                   [src]="img"
                   alt=""
-                  class="h-full w-full object-scale-down transition duration-300 hover:scale-105"
+                  class="cursor-pointer h-full w-full object-scale-down transition duration-300 hover:scale-105"
                 />
               </button>
             </div>
@@ -38,7 +38,7 @@ import EmblaCarousel, { type EmblaCarouselType } from 'embla-carousel';
           aria-label="Previous images"
           (click)="scrollPrev()"
           [disabled]="!canScrollPrev()"
-          class="cursor-poiner absolute left-0 top-1/2 -ml-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-ink shadow-md transition disabled:cursor-not-allowed disabled:opacity-30 hover:not-disabled:text-accent"
+          class="cursor-pointer absolute left-0 top-1/2 -ml-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-ink shadow-md transition disabled:cursor-not-allowed disabled:opacity-30 hover:not-disabled:text-accent"
         >
           ‹
         </button>
@@ -47,7 +47,7 @@ import EmblaCarousel, { type EmblaCarouselType } from 'embla-carousel';
           aria-label="Next images"
           (click)="scrollNext()"
           [disabled]="!canScrollNext()"
-          class="cursor-poiner absolute right-0 top-1/2 -mr-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-ink shadow-md transition disabled:cursor-not-allowed disabled:opacity-30 hover:not-disabled:text-accent"
+          class="cursor-pointer absolute right-0 top-1/2 -mr-4 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white text-ink shadow-md transition disabled:cursor-not-allowed disabled:opacity-30 hover:not-disabled:text-accent"
         >
           ›
         </button>
@@ -63,7 +63,7 @@ import EmblaCarousel, { type EmblaCarouselType } from 'embla-carousel';
           type="button"
           aria-label="Close"
           (click)="close()"
-          class="cursor-poiner absolute right-6 top-6 text-3xl leading-none text-white/80 transition hover:text-white"
+          class="cursor-pointer absolute right-6 top-6 text-3xl leading-none text-white/80 transition hover:text-white"
         >
           ×
         </button>
@@ -72,7 +72,7 @@ import EmblaCarousel, { type EmblaCarouselType } from 'embla-carousel';
           type="button"
           aria-label="Previous image"
           (click)="lightboxPrev($event)"
-          class="cursor-poiner absolute left-4 flex h-12 w-12 items-center justify-center rounded-full text-3xl text-white/80 transition hover:text-white sm:left-8"
+          class="cursor-pointer absolute left-4 flex h-12 w-12 items-center justify-center rounded-full text-3xl text-white/80 transition hover:text-white sm:left-8"
         >
           ‹
         </button>
@@ -88,7 +88,7 @@ import EmblaCarousel, { type EmblaCarouselType } from 'embla-carousel';
           type="button"
           aria-label="Next image"
           (click)="lightboxNext($event)"
-          class="cursor-poiner absolute right-4 flex h-12 w-12 items-center justify-center rounded-full text-3xl text-white/80 transition hover:text-white sm:right-8"
+          class="cursor-pointer absolute right-4 flex h-12 w-12 items-center justify-center rounded-full text-3xl text-white/80 transition hover:text-white sm:right-8"
         >
           ›
         </button>
