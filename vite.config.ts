@@ -4,7 +4,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/portfolio/',
   build: {
     target: ['es2020'],
   },
@@ -13,7 +12,6 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     analog({
-      apiPrefix: 'portfolio',
       ssr: false,
       static: true,
       content: {
