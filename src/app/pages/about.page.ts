@@ -36,14 +36,7 @@ export const routeMeta: RouteMeta = {
                     <div class="space-y-4 text-ink/70 mt-10">
                         <p>
                             I studied industrial engineering in computer science at UHasselt and KU Leuven, then spent a
-                            semester in Finland studying service design. That mix is why I care about how something
-                            works
-                            for people, not just whether it works.
-                        </p>
-                        <p>
-                            At Brussels Airport I was the only frontend developer on a cargo platform, designing and
-                            building the interfaces and a shared component library. Right now I'm designing and building
-                            Move a-head, a planning tool for G-sport Vlaanderen, with Angular and Spring.
+                            semester in Finland studying service design and doing an internship at a startup.
                         </p>
                     </div>
                 </div>

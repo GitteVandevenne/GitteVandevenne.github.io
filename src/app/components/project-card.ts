@@ -20,7 +20,7 @@ import type { ProjectAttributes } from '../models/project';
             <img
               [src]="project().attributes.cardImage ?? project().attributes.coverImage"
               alt=""
-              class="h-full w-full object-scale-down transition duration-500 group-hover:scale-105"
+              class="h-full w-full object-scale-down transition duration-500 group-hover:scale-105 p-3"
             />
           }
         </div>

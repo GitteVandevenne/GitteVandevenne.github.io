@@ -48,7 +48,7 @@ export const routeMeta: RouteMeta = {
             <img
               [src]="p.attributes.coverImage"
               alt=""
-              class="w-full object-cover"
+              class="w-full object-cover max-w-6xl m-auto"
             />
             </div>
           }
